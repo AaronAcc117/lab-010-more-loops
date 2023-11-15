@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script>
+        //  the maximum_stories variable
+        let maximum_stories = 10; // You can change this value to your desired maximum
+
+        // Asks the user which floor they work on
+        let userFloor = parseInt(prompt("On what floor of the building is your office?"));
+
+        //  while loop
+        while (userFloor <= 0 || userFloor > maximum_stories || isNaN(userFloor)) {
+            // If the user enters an invalid number, print an error message
+            console.error(`Error: ${userFloor} is not a valid floor number. The building has ${maximum_stories} floors. Please enter a valid number.`);
+
+            // Ask the user again
+            userFloor = parseInt(prompt("Please enter a valid floor number:"));
+        }
+
+        
+        console.log("Congratulations! You work on floor " + userFloor + ".");
+    </script>
+    
+</body>
+</html>

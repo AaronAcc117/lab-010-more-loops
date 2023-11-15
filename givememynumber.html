@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script>
+        let userNumber = prompt("Gimme a number greater than 100 plz...");
+
+//  while loop 
+while (userNumber <= 100 || isNaN(userNumber)) {
+    
+    userNumber = prompt("This number is less than 100, dummy. Try again… I’ve got all day…");
+}
+
+//  message to the console 
+console.log(userNumber + " is greater than 100! Good work.");
+
+   </script> 
+</body>
+</html>
