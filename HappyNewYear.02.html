@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script>
+        //  recursive function 
+        function countDown(start) {
+            console.log(start);
+
+            let nextNumber = start - 1;
+
+            // my conditional statement for recursion 
+            if (nextNumber > 0) {
+                // 1-second delay using setTimeout
+                setTimeout(countDown, 1000, nextNumber);
+            } else {
+                // Add a 1-second delay for the final "HAPPY NEW YEAR!" message
+                setTimeout(function(){console.log("HAPPY NEW YEAR!");}, 1000, nextNumber);
+            }
+        }
+
+        
+        let count = +prompt("How many seconds until New Year’s Eve?");
+        countDown(count);
+    </script>
+    
+</body>
+</html>

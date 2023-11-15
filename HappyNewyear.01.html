@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <script>
+        //  function countDown
+        function countDown(start) {
+            console.log(start);
+
+            //  variable nextNumber
+            let nextNumber = start - 1;
+
+            //  conditional statement for recursion 
+            if (nextNumber > 0) {
+                countDown(nextNumber);
+            } else {
+                console.log("HAPPY NEW YEAR!");
+            }
+        }
+
+        // the countDown function with an argument of 10
+        countDown(10);
+    </script>
+    
+</body>
+</html>
